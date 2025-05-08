@@ -1,175 +1,187 @@
-body{
+body {
     background-color: whitesmoke;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px;
     padding: 20px;
     padding-top: 60px;
     min-height: 100vh;
-    
+    background-image: url('../imagens usadas/wave-haikei.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-header{
-    font-size:xx-large;
-    color: black;
+header {
+    font-size: xx-large;
+    color: #1565C0;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     display: inline-block;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #007bff;
-    color: white;
-    text-align: center;
+    background-color: white;
     padding: 15px 0;
     z-index: 10;
 }
-p{
+
+p {
     font-size: medium;
     font-weight: 450;
     text-align: left;
-    color:black;
+    color: black;
     display: block;
     margin: 5px;
 }
-h2{
+
+h1 {
     font-size: larger;
-    color:black;
-    text-align:left;
+    color: black;
+    text-align: left;
+    font-weight: 750;
+    display: block;
+}
+
+h2 {
+    font-size: larger;
+    color: black;
+    text-align: left;
     font-weight: 600;
     display: block;
 }
 
-h1{
-    font-size: larger;
-    color:black;
-    text-align:left;
-    font-weight:750;
-    display: block;
-}
-a{
+a {
     color: black;
     text-decoration: none;
     font-weight: bold;
 }
-.form-img{
+
+.form-img {
     margin: 0px;
     padding: 20px;
-    width:auto;
+    width: auto;
     height: auto;
     display: inline-block;
+}
 
-    button {
-        background-color: #007bff; 
-        color: white;
-        padding: 3px 10px;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-        transition: background-color 0.3s, box-shadow 0.3s;
-      }
-    
-      button:hover {
-        background-color: #24b300;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-      }
-      button:active {
-        background-color: #000700;
+.form-img button {
+    background-color: #007bff;
+    color: white;
+    padding: 3px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
+
+.form-img button:hover {
+    background-color: #24b300;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.form-ctt{
+
+.form-img button:active {
+    background-color: #000700;
+}
+
+.form-ctt {
     margin: 0px;
     padding: 20px;
-    width:auto;
+    width: auto;
     height: auto;
     display: inline-block;
     border: #003d80 solid;
     border-radius: 20px;
     position: relative;
-    }
-    .campo-email {
-        position: relative;
-        display: block;
-        margin-bottom: 10px;
-    }
-    
-    .campo-email label {
-        display: block;
-        position: relative;
-        margin-bottom: 5px;
-    }
-    
-
-    .button-ctt{
-        width: 100%;
-        padding: 5px;
-        background-color: #007bff;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        cursor: pointer;
-
-     
-    input:hover{
-         border-color: #007bff;
-     }
-     
-     input:active{
-        color: #003d80;
-     }
-     input:focus {
-         border-color: #003d80;
-         box-shadow: 0 0 5px #003d80;
-     }
-     }
-
-
-     .menuindex{
-        position: fixed;
-        top: 60px; 
-        left: 0;
-        width: 200px;
-        height: 100vh; 
-        background-color: #f8f9fa;
-        padding: 20px;
-        overflow-y: auto; 
 }
-    .menuindex ul li{
-        margin-bottom: 10px;
-    }
-    
-    .menuindex ul li a {
-        text-decoration: none;
-        color: #333;
-    }
-     
-table{
+
+.campo-email {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.campo-email label {
+    display: block;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.button-ctt {
+    width: 100%;
+    padding: 5px;
+    background-color: #1E88E5;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+.button-ctt:hover {
+    border-color: #007bff;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.button-ctt:active {
+    color: #003d80;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button-ctt:focus {
+    border-color: #003d80;
+    box-shadow: 0 0 5px #003d80, 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menuindex {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: transparent;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.menuindex ul li {
+    margin-bottom: 10px;
+}
+
+.menuindex ul li a {
+    text-decoration: none;
+    color: #1E88E5;
+}
+
+table {
     border-collapse: collapse;
     width: 100%;
     display: inline;
-    
-    th{
-        background-color: #007bff;
+}
+
+table th {
+    background-color: #007bff;
     color: white;
     border: 1px solid black;
     padding: 8px;
-    }
-
-    td {
-        border: 1px solid black;
-        padding: 8px;
-    } 
-    tr{
-        border-bottom: 3px solid black;
-    }
 }
 
-main{
-    margin-left: 220px; 
+table td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+table tr {
+    border-bottom: 3px solid black;
+}
+
+main {
+    margin-left: 220px;
     padding: 20px;
-    background-color: #fff;
-    width: calc(100% - 220px); 
-    min-height: calc(100vh - 60px); 
+    width: calc(100% - 220px);
+    min-height: calc(100vh - 60px);
     overflow-y: auto;
 }
