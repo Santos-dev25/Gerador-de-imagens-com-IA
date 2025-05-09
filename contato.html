@@ -9,36 +9,33 @@
 <body>
     <header>Entre em Contato</header>
     <br><br>
-    <p>Em breve, esta página contará com um formulário para que você possa entrar em contato conosco.</p>
-    <p>Formas de contato:</p>
-    <ul>
-        <li>EMAIL:caua@gmail.com</li>
-        <li>Intagram:_cauasantos_</li>
-        <li>GIT-HUB:<a href="https://github.com/Santos-dev25">Santos-dev25</a></li>
+    <p class="formasdectt p">Formas de contato:</p>
+
+    <ul class="formasdectt">
+        <li class="formasdectt li">EMAIL:caua@gmail.com</li>
+        <li class="formasdectt li">Intagram:_cauasantos_</li>
+        <li class="formasdectt li">GIT-HUB:<a href="https://github.com/Santos-dev25">Santos-dev25</a></li>
     </ul>
 
-    <div class="form-ctt">
-        <form action="#">
-            <div class="campo">
-                <label for="nome">Nome:</label>
-                <input type="text" name="Nome" id="nome" placeholder="Digite seu nome:">
-            </div><br>
-    
-            <div class="campo-email">
-                <label for="email">Email:</label>
-                <input type="text" name="email" id="email" placeholder="Digite seu e-mail">
-            </div><br>
-    
-            <div class="campo">
-                <label for="mensagem">Mensagem:</label><br>
-                <textarea name="mensagem" id="mensagem" rows="5" cols="28" placeholder="Digite sua mensagem..."></textarea>
-            </div><br>
-    
-            <button class="button-ctt" type="submit">Enviar</button>
-        </form>
-    </div>
+    <form class="form-ctt">
+        <div class="campo-email">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+        </div>
+        <div class="campo-email">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
+        </div>
+        <div class="campo-email">
+            <label for="mensagem">Comentário</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..."></textarea>
+        </div>
+        <button class="button-ctt" type="submit">Enviar</button>
+    </form>
     
     <br>
-    <button><a href="index.html">Voltar para a página inicial</a></button>
+    <div class="voltar-container">
+        <a href="index.html" class="btn-voltar">← Voltar para a página inicial</a>
+    </div>
 </body>
 </html>
