@@ -262,6 +262,11 @@ main {
     min-height: calc(100vh - 60px);
 }
 
+body.pagina-index main {
+    margin-left: 0;
+    width: 100%;
+}
+
 table {
     border-collapse: collapse;
     width: 100%;
@@ -270,19 +275,19 @@ table {
     color: white;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 table th {
     background-color: #1565C0;
-    padding: 12px 10px;
+    padding: 12px 15px;
     text-align: left;
     font-weight: bold;
     border-bottom: 2px solid #0d47a1;
 }
 
 table td {
-    padding: 10px;
+    padding: 12px 15px;
     border-bottom: 1px solid #333;
 }
 
@@ -466,6 +471,171 @@ ul {
     padding: 15px;
     background-color: #e9ecef;
     border-radius: 8px;
+}
+
+.pagina-gerador {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto 40px auto;
+}
+
+.pagina-gerador #avisos {
+    color: #2c3e50;
+    background-color: #eaf2f8;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border-left: 5px solid #1E88E5;
+    font-size: 1.05em;
+    line-height: 1.6;
+}
+
+.separador-pagina {
+    border: 0;
+    height: 1px;
+    background-color: #dce4e9;
+    margin: 30px 0;
+}
+
+.pagina-gerador h1,
+.pagina-gerador h2 {
+    color: #1E88E5;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.pagina-gerador h1 {
+    font-size: 2em;
+}
+
+.pagina-gerador h2 {
+    font-size: 1.6em;
+}
+
+.pagina-gerador p, 
+.pagina-gerador ul li {
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.7;
+}
+
+.pagina-gerador ul {
+    list-style-position: outside;
+    padding-left: 25px;
+    margin-bottom: 30px;
+    color: #34495e;
+}
+
+.pagina-gerador ul li {
+    margin-bottom: 10px;
+}
+
+.form-img {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 25px 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #dce4e9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-img label {
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.form-img input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 1em;
+    color: #495057;
+    background-color: #f8f9fa;
+    box-sizing: border-box;
+}
+
+.form-img input[type="text"]:focus {
+    outline: none;
+    border-color: #1E88E5;
+    box-shadow: 0 0 0 0.2rem rgba(30, 136, 229, 0.25);
+}
+
+.form-img button[type="submit"] {
+    padding: 12px 25px;
+    background-color: #1E88E5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.05em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    align-self: flex-start;
+}
+
+.form-img button[type="submit"]:hover {
+    background-color: #1565C0;
+    transform: translateY(-2px);
+}
+
+.form-img button[type="submit"]:active {
+    background-color: #0D47A1;
+    transform: translateY(0);
+}
+
+.imagem-gerada-container {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.imagem-gerada-container img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #ffffff;
+    border-radius: 8px;
+    padding: 0px;
+    background-color: #f8f9fa;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.pagina-inicial-conteudo {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto 40px auto;
+    text-align: left;
+}
+
+.pagina-inicial-conteudo .introducao-home {
+    color: #ffffff;
+    font-size: 1.1em;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.pagina-inicial-conteudo .separador-home {
+    border: 0;
+    height: 1px;
+    background-color: #cccccc;
+    margin: 30px 0;
+}
+
+.pagina-inicial-conteudo h2 {
+    color: #1E88E5;
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 @media (min-width: 769px) {
