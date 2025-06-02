@@ -37,16 +37,16 @@ p {
     font-size: medium;
     font-weight: 450;
     text-align: left;
-    color: white; /* Esta cor branca pode precisar de ajuste dependendo do contexto */
+    color: white;
     margin: 5px;
 }
 
-h1, h2, h3 { /* Adicionado h3 para consistência */
+h1, h2, h3 {
     font-size: larger;
-    color: white; /* Esta cor branca pode precisar de ajuste dependendo do contexto */
+    color: white;
     text-align: left;
     font-weight: 750;
-    display: block; /* h3 já é block por padrão, mas mantido por consistência */
+    display: block;
 }
 
 a {
@@ -93,7 +93,7 @@ a {
     color: #64B5F6;
 }
 
-.container-formulario { /* Esta classe parece ser genérica, mantida como está */
+.container-formulario {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,12 +102,9 @@ a {
     flex-wrap: wrap;
 }
 
-/* REMOVIDO: .imagem-decorativa - não é mais necessária */
-
 .form-ctt {
     background-color: #2c2c2c;
     padding: 30px;
-    /* width: 100%; */ /* Flexbox cuidará da largura com flex-basis */
     max-width: 450px;
     border: 1px solid #1E88E5;
     border-radius: 15px;
@@ -116,14 +113,13 @@ a {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    flex: 2 1 400px; /* O formulário pode crescer mais, base de 400px */
+    flex: 2 1 400px;
 }
 
 .campo-email label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    /* A cor será herdada de .form-ctt (white) */
 }
 
 .campo-email input,
@@ -168,8 +164,6 @@ a {
     transform: translateY(0);
 }
 
-/* Estilos para .formasdectt e .formasdectt li são mantidos caso sejam usados em outros lugares. */
-/* Se eles eram *apenas* para a lista de contato que foi movida, você pode considerar removê-los. */
 .formasdectt {
     display: flex;
     justify-content: center;
@@ -177,72 +171,65 @@ a {
     font-size: 22px;
     width: 100%;
     margin-top: 40px;
-    /* A cor padrão dos 'p' e 'ul' é branca, o que pode ser um problema se usado diretamente no fundo 'whitesmoke' */
 }
 
 .formasdectt li {
     margin: 20px;
 }
 
-
-/* Container principal da página de contato */
 .contato-flex {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Alinha os itens ao topo */
-    gap: 40px; /* Espaço entre o bloco de info e o formulário */
+    align-items: flex-start;
+    gap: 40px;
     padding: 40px 20px;
     width: 90%;
-    max-width: 900px; /* Ajustado para dois blocos menores */
+    max-width: 900px;
     margin: 40px auto;
     flex-wrap: wrap;
 }
 
-/* NOVO: Bloco de informações de contato lateral */
 .info-contato-lateral {
-    flex: 1 1 300px; /* Base de 300px, pode crescer/encolher */
+    flex: 1 1 300px;
     padding: 20px;
-    background-color: #2c2c2c; /* Mesmo fundo do formulário */
+    background-color: #2c2c2c;
     border-radius: 15px;
-    border: 1px solid #1E88E5; /* Mesma borda do formulário */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Mesma sombra */
-    color: white; /* Texto branco dentro deste bloco */
+    border: 1px solid #1E88E5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    color: white;
 }
 
 .info-contato-titulo {
-    font-size: 20px; /* Ajuste conforme necessário */
-    color: #1E88E5; /* Cor de destaque */
+    font-size: 20px;
+    color: #1E88E5;
     margin-bottom: 15px;
     font-weight: bold;
-    text-align: left; /* Herdado de h3, mas explícito */
+    text-align: left;
 }
 
 .info-contato-lista {
-    list-style: none; /* Remove marcadores padrão da lista */
+    list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Espaço entre os itens da lista */
+    gap: 10px;
 }
 
 .info-contato-lista li {
     font-size: 15px;
     line-height: 1.4;
-    /* Cor herdada de .info-contato-lateral (white) */
 }
 
 .info-contato-lista li a {
-    color: #64B5F6; /* Cor mais clara para links dentro do bloco escuro */
-    font-weight: normal; /* Links podem ter peso normal aqui */
+    color: #64B5F6;
+    font-weight: normal;
 }
 
 .info-contato-lista li a:hover {
     color: #1E88E5;
     text-decoration: underline;
 }
-
-/* REMOVIDO: .decoracao-contato e .decoracao-contato img */
 
 .menuindex {
     position: fixed;
@@ -303,11 +290,11 @@ table tr:hover {
     background-color: #2a2a2a;
 }
 
-ul { /* Estilo geral para listas não ordenadas */
+ul {
     list-style-type: disc;
     padding-left: 20px;
     margin: 20px 0;
-    color: white; /* Isso pode ser problemático em fundos claros */
+    color: white;
     font-size: 16px;
     line-height: 1.6;
 }
@@ -395,6 +382,102 @@ ul { /* Estilo geral para listas não ordenadas */
     font-weight: 500;
 }
 
+.pagina-sobre {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.sobre-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    align-items: start;
+    margin-bottom: 30px;
+}
+
+.sobre-texto {
+    line-height: 1.7;
+}
+
+.sobre-texto h2 {
+    color: #1E88E5;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.sobre-texto h3 {
+    color: #1565C0;
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.sobre-texto p {
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.tecnologias-lista {
+    list-style: square;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.tecnologias-lista li {
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.sobre-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.sobre-imagem img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+.separador-sobre {
+    border: 0;
+    height: 1px;
+    background-color: #cccccc;
+    margin: 40px 0;
+}
+
+.agradecimento-sobre p {
+    color: #333333;
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+}
+
+@media (min-width: 769px) {
+    .sobre-grid-container {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
+    .sobre-texto {
+        padding-right: 20px;
+    }
+}
+
 @media (max-width: 768px) {
     .cabecalho {
         flex-direction: column;
@@ -422,31 +505,28 @@ ul { /* Estilo geral para listas não ordenadas */
 
     .contato-flex {
         flex-direction: column;
-        align-items: center; /* Centraliza os blocos empilhados */
+        align-items: center;
         gap: 30px;
-        max-width: 500px; /* Limita a largura máxima em telas pequenas */
+        max-width: 500px;
     }
 
-    /* NOVO: Estilos para info-contato-lateral em telas pequenas */
     .info-contato-lateral {
-        flex-basis: auto; /* Reseta a base flex */
-        width: 100%;     /* Ocupa toda a largura disponível (respeitando o max-width do pai) */
-        /* order: -1; */ /* Descomente se quiser que a info venha antes do form */
-        margin-bottom: 0; /* O gap do .contato-flex já cuida do espaçamento */
+        flex-basis: auto;
+        width: 100%;
+        margin-bottom: 0;
     }
     
     .info-contato-titulo {
-        text-align: center; /* Centraliza o título */
-    }
-    .info-contato-lista {
-        align-items: center; /* Centraliza os itens da lista */
+        text-align: center;
     }
 
-    /* REMOVIDO: .decoracao-contato da media query */
+    .info-contato-lista {
+        align-items: center;
+    }
 
     .form-ctt {
-        width: 100%; /* Ocupa toda a largura disponível (respeitando o max-width do pai) */
-        flex-basis: auto; /* Reseta a base flex */
-        max-width: none; /* Deixa o max-width do .contato-flex controlar */
+        width: 100%;
+        flex-basis: auto;
+        max-width: none;
     }
 }
