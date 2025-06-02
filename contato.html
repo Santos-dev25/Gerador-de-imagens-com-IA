@@ -1,41 +1,46 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entre em contato</title>
-    <link rel="stylesheet" href="estilos/estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entre em Contato</title>
+  <link rel="stylesheet" href="estilos/estilo.css">
 </head>
 <body>
-    <header>Entre em Contato</header>
-    <br><br>
-    <p class="formasdectt p">Formas de contato:</p>
+  <header>Entre em Contato</header>
 
-    <ul class="formasdectt">
-        <li class="formasdectt li">EMAIL:caua@gmail.com</li>
-        <li class="formasdectt li">Intagram:_cauasantos_</li>
-        <li class="formasdectt li">GIT-HUB:<a href="https://github.com/Santos-dev25">Santos-dev25</a></li>
-    </ul>
+  <section class="contato-flex">
+    <div class="info-contato-lateral">
+      <h3 class="info-contato-titulo">Formas de contato:</h3>
+      <ul class="info-contato-lista">
+        <li>EMAIL: caua@gmail.com</li>
+        <li>Instagram: _cauasantos_</li>
+        <li>GIT-HUB: <a href="https://github.com/Santos-dev25" target="_blank">Santos-dev25</a></li>
+      </ul>
+    </div>
 
     <form class="form-ctt">
-        <div class="campo-email">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
-        </div>
-        <div class="campo-email">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
-        </div>
-        <div class="campo-email">
-            <label for="mensagem">Comentário</label>
-            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..."></textarea>
-        </div>
-        <button class="button-ctt" type="submit">Enviar</button>
+      <div class="campo-email">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+      </div>
+
+      <div class="campo-email">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
+      </div>
+
+      <div class="campo-email">
+        <label for="mensagem">Comentário</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..."></textarea>
+      </div>
+
+      <button class="button-ctt" type="submit">Enviar</button>
     </form>
-    
-    <br>
-    <div class="voltar-container">
-        <a href="index.html" class="btn-voltar">← Voltar para a página inicial</a>
-    </div>
+  </section>
+
+  <div class="voltar-container">
+    <a href="index.html" class="btn-voltar">← Voltar para a página inicial</a>
+  </div>
 </body>
 </html>
