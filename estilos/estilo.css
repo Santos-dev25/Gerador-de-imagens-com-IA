@@ -12,7 +12,7 @@ html, body {
     background-color: whitesmoke;
     min-height: 100vh;
     padding-top: 60px;
-    background-image: url('../imagens usadas/wave-haikei.svg');
+    background-image: url('../assets/wave-haikei.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
